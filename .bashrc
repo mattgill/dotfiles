@@ -22,5 +22,5 @@ alias glo="git log --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 export GIT_PS1_SHOWDIRTYSTAT=1
 export GIT_PS1_SHOWUPSTREAM=auto
 . ~/.gitrc
-export PS1="\[\033[01;31m\]$USERSHORTNAME@\h \[\033[01;36m\]\t \[\033[1;37m\]\w\[\033[1;32m\]\$(__git_ps1 | sed 's/[()]//g')\[\033[1;37m\] $ "
+export PS1="\[\033[01;31m\]$USER@\h \[\033[01;36m\]\t \[\033[1;37m\]\w\[\033[1;32m\]\$(__git_ps1 | sed 's/[()]//g')\[\033[1;37m\] $ "
 
