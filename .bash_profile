@@ -13,8 +13,8 @@ export PATH
 
 # for SSH connectivity reasons, if this is a remote box, set up a terminal to persist.
 if [ ! -z "$SSH_CLIENT" ]; then
-	CHECK_SCREEN_EXISTS=`/usr/bin/command -v screen 2> /dev/null`
-	CHECK_TMUX_EXISTS=`/usr/bin/command -v tmux 2> /dev/null`
+	CHECK_SCREEN_EXISTS=`which screen 2> /dev/null`
+	CHECK_TMUX_EXISTS=`which tmux 2> /dev/null`
 	if [ ! -z "$CHECK_SCREEN_EXISTS" ]; then
 		/usr/bin/screen -dRR General
 	# if not try tmux.
